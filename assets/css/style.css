@@ -145,6 +145,12 @@ pre {
 .navbar .navbar-collapse .nav li:last-child a {
   margin: 0 0 0 20px;
 }
+.navbar .navbar-collapse .nav li.active a {
+  color: #ed5139;
+  -webkit-box-shadow: inset 0px -2px 0 0px #ed5139;
+  -moz-box-shadow: inset 0px -2px 0 0px #ed5139;
+  box-shadow: inset 0px -2px 0 0px #ed5139;
+}
 .navbar .navbar-collapse .nav li.dropdown .dropdown-menu {
   background: #27272a;
   width: 215px;

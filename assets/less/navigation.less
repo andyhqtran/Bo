@@ -34,6 +34,12 @@
 						margin: 0 0 0 20px;
 					}
 				}
+				&.active {
+					a {
+						color: @accent;
+						.box-shadow-inset(@v-shadow: -2px; @blur: 0; @color: @accent;);
+					}
+				}
 				&.dropdown {
 					> a {}
 					.dropdown-menu {
