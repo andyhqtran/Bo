@@ -9,7 +9,6 @@ $('.navbar-form-toggle').on('click', function(event) {
     event.preventDefault();
     event.stopPropagation();
     $(this).parent().toggleClass('open');
-    $(this).parent().find("ul").parent().children("form").toggleClass('open');
 });
 
 $(document).mouseup(function (e) {
@@ -17,6 +16,6 @@ $(document).mouseup(function (e) {
     if (!container.is(e.target)
         && container.has(e.target).length === 0)
     {
-        container.toggleClass('open');
+        container.removeClass('open');
     }
 });
