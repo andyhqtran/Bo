@@ -6,8 +6,15 @@
 	padding: 0 15px;
 	.border-radius;
 	.navbar-header {
+	    .navbar-toggle {
+	      margin: 33px 15px 0 8px;
+	      .icon-bar {
+	        background: @gray;
+	      }
+	    }
 		.navbar-brand {
 			height: auto;
+			margin: 0 80px 0 0;
 			padding: 34px 19px;
 		}
 	}
@@ -21,7 +28,6 @@
 					font-size: 15px;
 					font-weight: 700;
 					line-height: 1;
-					.transitions;
 					&:hover,
 					&:active,
 					&:focus {
@@ -83,7 +89,7 @@
 				&.mega-menu {}
 			}
 			&.navbar-social {
-				margin: 0 0 0 70px;
+				margin: 0;
 				li {
 					a {
 						margin: 0 15px 0 0;
@@ -131,6 +137,7 @@
 				background: @white;
 				width: 0%;
 				height: 100%;
+				max-height: 101px;
 				opacity: 0;
 				visibility: hidden;
 				.transitions;
@@ -165,4 +172,114 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 767px) {
+  	.navbar {
+    	.navbar-header {
+      		.navbar-brand {}
+    	}
+    	.navbar-collapse {
+      		.navbar-form {
+      			width: 100%;
+      			padding: 0;
+      			.navbar-form-toggle {
+      				display: none;
+      			}
+      			form {
+      				position: relative;
+      				top: auto;
+      				left: auto;
+      				display: block;
+      				width: 100%;
+      				height: auto;
+      				opacity: 1;
+      				visibility: visible;
+      				.form-group {
+	      				.form-control {
+	      					height: auto;
+	      					border-bottom: 1px solid fade(@black, 3%);
+	      					padding: 15px 5px;
+	      					font-size: 14px;
+	      					line-height: 1;
+	      				}
+	      			}
+      			}
+      		}
+      		.nav {
+      			margin: 0;
+      			li {
+      				a {
+      					.box-shadow-none;
+      					margin: 0;
+      					padding: 20px 0;
+      					line-height: 1;
+      					&:hover {
+      						color: @accent;
+      					}
+      				}
+      				&.dropdown {
+      					.dropdown-menu {
+      						position: relative;
+      						top: auto;
+      						left: auto;
+      						display: block;
+      						background: 0;
+      						width: 100%;
+      						border: 0;
+      						.box-shadow-none;
+      						li {
+      							a {
+      								color: @gray;
+      								&:hover {
+      									color: @accent !important;
+      								}
+      								&:before {
+      									content: '- ';
+      								}
+      							}
+      							&.dropdown {
+      								.dropdown-menu {
+			      						position: relative;
+			      						display: block;
+      									top: auto;
+      									left: auto;
+      									padding: 0 0 0 30px;
+      								}
+      							}
+      						}
+      					}
+      				}
+      				&:last-child {
+      					a {
+      						margin: 0;
+      					}
+      				}
+      				&.active {
+      					a {
+	      					.box-shadow-none;
+	      				}
+      				}
+      				&.open {}
+      			}
+      			&.navbar-social {
+      				display: block;
+      				li {
+      					display: inline-block;
+      					a {
+      						height: 45px;
+      						margin: 0 26px 0 0;
+      						padding: 0;
+      						line-height: 45px;
+      						text-align: center;
+      						.box-sizing;
+      						.fa {
+      							line-height: 45px;
+      						}
+      					}
+      				}
+      			}
+      		}
+  		}
+  	}
 }
