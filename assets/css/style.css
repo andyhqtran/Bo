@@ -68,8 +68,8 @@ h6 {
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:active {
-  color: #ed5139;
-  border-color: #ed5139;
+  color: #0e4b81;
+  border-color: #0e4b81;
 }
 .btn.btn-rounded {
   width: 46px;
@@ -130,6 +130,10 @@ pre {
   margin: 0 80px 0 0;
   padding: 34px 19px;
 }
+.navbar .navbar-header .navbar-brand img {
+  max-height: 41px;
+  margin: -5px 0;
+}
 .navbar .navbar-collapse .nav li a {
   margin: 0 20px;
   padding: 42px 0;
@@ -142,16 +146,16 @@ pre {
 .navbar .navbar-collapse .nav li a:active,
 .navbar .navbar-collapse .nav li a:focus {
   background: 0;
-  color: #ed5139;
+  color: #0e4b81;
 }
 .navbar .navbar-collapse .nav li:last-child a {
   margin: 0 0 0 20px;
 }
 .navbar .navbar-collapse .nav li.active a {
-  color: #ed5139;
-  -webkit-box-shadow: inset 0px -2px 0 0px #ed5139;
-  -moz-box-shadow: inset 0px -2px 0 0px #ed5139;
-  box-shadow: inset 0px -2px 0 0px #ed5139;
+  color: #0e4b81;
+  -webkit-box-shadow: inset 0px -2px 0 0px #0e4b81;
+  -moz-box-shadow: inset 0px -2px 0 0px #0e4b81;
+  box-shadow: inset 0px -2px 0 0px #0e4b81;
 }
 .navbar .navbar-collapse .nav li.dropdown .dropdown-menu {
   background: #27272a;
@@ -186,7 +190,7 @@ pre {
 }
 .navbar .navbar-collapse .nav li.dropdown.open a {
   background: 0;
-  color: #ed5139;
+  color: #0e4b81;
 }
 .navbar .navbar-collapse .nav.navbar-social {
   margin: 0;
@@ -261,7 +265,7 @@ pre {
   display: none;
 }
 .navbar .navbar-collapse .navbar-form.open .navbar-form-toggle {
-  background: #ed5139;
+  background: #0e4b81;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -312,7 +316,7 @@ pre {
     line-height: 1;
   }
   .navbar .navbar-collapse .nav li a:hover {
-    color: #ed5139;
+    color: #0e4b81;
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu {
     position: relative;
@@ -330,7 +334,7 @@ pre {
     color: #595d61;
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li a:hover {
-    color: #ed5139 !important;
+    color: #0e4b81 !important;
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li a:before {
     content: '- ';
