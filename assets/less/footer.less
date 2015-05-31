@@ -1,0 +1,50 @@
+.footer {
+	background: @dark_gray;
+	padding: 50px 0;
+	color: @white;
+	font-size: 13px;
+	.copyright {
+		margin: 0;
+	}
+	.footer-nav {
+		list-style: none;
+		margin: 0;
+		li {
+			display: inline-block;
+			margin: 0 20px 0 0;
+			color: @white;
+			font-size: 13px;
+			font-weight: 700;
+			line-height: 1;
+			a {
+				color: @lighter_gray;
+				text-decoration: none;
+				&:hover {
+					color: @white;
+				}
+			}
+			&.active {
+				a {
+					color: @white;
+				}
+			}
+			&:last-child {
+				margin: 0;
+			}
+		}
+		&.footer-social {
+			li {
+				margin: 0 15px 0 0;
+				a {
+					color: @lighter_gray;
+					&:hover {
+						color: @white;
+					}
+				}
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

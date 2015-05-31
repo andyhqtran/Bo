@@ -12,7 +12,7 @@
 		%link{:type => 'text/css', :media => 'screen', :rel => 'stylesheet', :href => 'assets/css/bootstrap.min.css'}
 		%link{:type => 'text/css', :media => 'screen', :rel => 'stylesheet', :href => 'assets/css/style.css'}
 	%body
-		%nav.navbar.navbar-static
+		%nav.navbar.navbar-fixed-top
 			.container
 				.row
 					.col-md-12
@@ -56,7 +56,109 @@
 								%li
 									%a{:href => '#'} Blog
 								%li
-									%a{:href => '#'} Contact Us
+									%a{:href => '#'} Contact
+		.carousel.slide#hero{:'data-ride' => 'carousel'}
+			%ol.carousel-indicators
+				%li.active{:'data-target' => '#hero', :'data-slide-to' => '0'}
+				%li{:'data-target' => '#hero', :'data-slide-to' => '1'}
+				%li{:'data-target' => '#hero', :'data-slide-to' => '2'}
+			.carousel-inner{:role => 'listbox'}
+				.item.active
+					%img{:src => 'https://download.unsplash.com/photo-1429041966141-44d228a42775', :alt => ''}
+					.carousel-caption
+						test
+				.item
+					%img{:src => 'https://download.unsplash.com/photo-1428976365951-b70e0fa5c551', :alt => ''}
+					.carousel-caption
+						test
+				.item
+					%img{:src => 'https://download.unsplash.com/photo-1428959249159-5706303ea703', :alt => ''}
+					.carousel-caption
+						test
+			%a.left.carousel-control{:href => '#hero', :role => 'button', :'data-slide' => 'prev'}
+				%span.glyphicon.glyphicon-chevron-left{:'aria-hidden' => 'true'}
+				%span.sr-only Previous
+			%a.right.carousel-control{:href => '#hero', :role => 'button', :'data-slide' => 'next'}
+				%span.glyphicon.glyphicon-chevron-right{:'aria-hidden' => 'true'}
+				%span.sr-only Next
+		%section#testimonials
+			.container
+				.row
+					.col-md-8.col-md-offset-2
+						%h2.section-title
+							What our customers say?
+				.row
+					.col-md-8.col-md-offset-2
+						.carousel.slide#testimonials-carousel{:'data-ride' => 'carousel'}
+							%ol.carousel-indicators
+								%li.active{:'data-target' => '#testimonials-carousel', :'data-slide-to' => '0'}
+								%li{:'data-target' => '#testimonials-carousel', :'data-slide-to' => '1'}
+								%li{:'data-target' => '#testimonials-carousel', :'data-slide-to' => '2'}
+							.carousel-inner{:role => 'listbox'}
+								.item.active
+									%p.quote Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.
+									.avatar
+										%img{:src => 'http://localhost:8888/printedunion/wp-content/uploads/2015/05/John-Doe_avatar_1391638216.jpg'}
+									%p.author John Doe
+									%p.company Company Name
+								.item
+									%p.quote Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.
+									.avatar
+										%img{:src => 'http://localhost:8888/printedunion/wp-content/uploads/2015/05/John-Doe_avatar_1391638216.jpg'}
+									%p.author John Doe
+									%p.company Company Name
+								.item
+									%p.quote Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.
+									.avatar
+										%img{:src => 'http://localhost:8888/printedunion/wp-content/uploads/2015/05/John-Doe_avatar_1391638216.jpg'}
+									%p.author John Doe
+									%p.company Company Name
+		%section
+			.container
+				.col-md-4
+					%a.blurb{:href => '', :style => 'background-color: #e74c3c; background-image: url("assets/img/1.png");'}
+						%h3 Graphic Design
+						%p Meet our designers
+				.col-md-4
+					%a.blurb{:href => '', :style => 'background-color: #2ecc71; background-image: url("assets/img/2.png");'}
+						%h3 Printing
+						%p See the process
+				.col-md-4
+					%a.blurb{:href => '', :style => 'background-color: #48a2df; background-image: url("assets/img/3.png");'}
+						%h3 Mailing
+						%p Explore
+		%footer.footer
+			.container
+				.row
+					.col-md-12
+						%p.copyright.pull-left
+							Copyright &copy; 2015 PrintedUnion. All Rights Reserved.
+						%ul.footer-nav.footer-social.pull-right
+							%li
+								%a{:href => '#'}
+									%i.fa.fa-facebook
+							%li
+								%a{:href => '#'}
+									%i.fa.fa-twitter
+							%li
+								%a{:href => '#'}
+									%i.fa.fa-linkedin
+							%li
+								%a{:href => '#'}
+									%i.fa.fa-rss
+						%ul.footer-nav.pull-right
+							%li.active
+								%a{:href => '#'} Home
+							%li
+								%a{:href => '#'} About
+							%li
+								%a{:href => '#'} Services
+							%li
+								%a{:href => '#'} Store
+							%li
+								%a{:href => '#'} Blog
+							%li
+								%a{:href => '#'} Contact
 		%script{:src => 'assets/js/jquery-1.11.3.min.js'}
 		%script{:src => 'assets/js/modernizr.js'}
 		%script{:src => 'assets/js/bootstrap.min.js'}

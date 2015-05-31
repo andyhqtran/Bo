@@ -1,0 +1,77 @@
+#hero {
+	padding: 99px 0 0;
+	.item {
+		max-height: 500px;
+	}
+}
+
+#testimonials {
+	background: #373b43;
+	padding: 30px 0;
+	color: @white;
+	.section-title {
+		font-size: 20px;
+		font-weight: 400;
+		text-align: center;
+	}
+	.carousel-indicators {
+		bottom: 0;
+	}
+	.item {
+		padding: 30px 0 30px;
+		color: #f2f3f5;
+		font-family: 'Source Sans Pro', sans-serif;
+		text-align: center;
+		.quote {
+			margin: 0 0 30px;
+			font-style: italic;
+			font-size: 16px;
+			&:before,
+			&:after {
+				content: '"';
+			}
+		}
+		.avatar {
+			height: 60px;
+			width: 60px;
+			.border-radius(100%);
+			margin: 0 auto 15px;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+		.author {
+			margin: 0;
+			color: @white;
+			font-size: 15px;
+			font-weight: 600;
+		}
+		.company {
+			color: #f2f3f5;
+			font-style: italic;
+		}
+	}
+}
+
+.blurb {
+	display: block;
+	background: @dark_gray;
+	.background-cover;
+	height: 200px;
+	margin: 30px 0;
+	padding: 15px;
+	color: @white;
+	text-align: center;
+	.transitions;
+	h3 {
+		font-size: 22px;
+		font-weight: regular;
+	}
+	p {}
+	&:hover {
+		background-color: #252628 !important;
+		color: @white;
+		text-decoration: none;
+	}
+}

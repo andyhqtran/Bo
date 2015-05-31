@@ -13,7 +13,7 @@
     <link href='assets/css/style.css' media='screen' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <nav class='navbar navbar-static'>
+    <nav class='navbar navbar-fixed-top'>
       <div class='container'>
         <div class='row'>
           <div class='col-md-12'>
@@ -80,7 +80,7 @@
                   <a href='#'>Blog</a>
                 </li>
                 <li>
-                  <a href='#'>Contact Us</a>
+                  <a href='#'>Contact</a>
                 </li>
               </ul>
             </div>
@@ -88,6 +88,164 @@
         </div>
       </div>
     </nav>
+    <div class='carousel slide' data-ride='carousel' id='hero'>
+      <ol class='carousel-indicators'>
+        <li class='active' data-slide-to='0' data-target='#hero'></li>
+        <li data-slide-to='1' data-target='#hero'></li>
+        <li data-slide-to='2' data-target='#hero'></li>
+      </ol>
+      <div class='carousel-inner' role='listbox'>
+        <div class='item active'>
+          <img alt='' src='https://download.unsplash.com/photo-1429041966141-44d228a42775'>
+          <div class='carousel-caption'>
+            test
+          </div>
+        </div>
+        <div class='item'>
+          <img alt='' src='https://download.unsplash.com/photo-1428976365951-b70e0fa5c551'>
+          <div class='carousel-caption'>
+            test
+          </div>
+        </div>
+        <div class='item'>
+          <img alt='' src='https://download.unsplash.com/photo-1428959249159-5706303ea703'>
+          <div class='carousel-caption'>
+            test
+          </div>
+        </div>
+      </div>
+      <a class='left carousel-control' data-slide='prev' href='#hero' role='button'>
+        <span aria-hidden='true' class='glyphicon glyphicon-chevron-left'></span>
+        <span class='sr-only'>Previous</span>
+      </a>
+      <a class='right carousel-control' data-slide='next' href='#hero' role='button'>
+        <span aria-hidden='true' class='glyphicon glyphicon-chevron-right'></span>
+        <span class='sr-only'>Next</span>
+      </a>
+    </div>
+    <section id='testimonials'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-8 col-md-offset-2'>
+            <h2 class='section-title'>
+              What our customers say?
+            </h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-8 col-md-offset-2'>
+            <div class='carousel slide' data-ride='carousel' id='testimonials-carousel'>
+              <ol class='carousel-indicators'>
+                <li class='active' data-slide-to='0' data-target='#testimonials-carousel'></li>
+                <li data-slide-to='1' data-target='#testimonials-carousel'></li>
+                <li data-slide-to='2' data-target='#testimonials-carousel'></li>
+              </ol>
+              <div class='carousel-inner' role='listbox'>
+                <div class='item active'>
+                  <p class='quote'>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <div class='avatar'>
+                    <img src='http://localhost:8888/printedunion/wp-content/uploads/2015/05/John-Doe_avatar_1391638216.jpg'>
+                  </div>
+                  <p class='author'>John Doe</p>
+                  <p class='company'>Company Name</p>
+                </div>
+                <div class='item'>
+                  <p class='quote'>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <div class='avatar'>
+                    <img src='http://localhost:8888/printedunion/wp-content/uploads/2015/05/John-Doe_avatar_1391638216.jpg'>
+                  </div>
+                  <p class='author'>John Doe</p>
+                  <p class='company'>Company Name</p>
+                </div>
+                <div class='item'>
+                  <p class='quote'>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <div class='avatar'>
+                    <img src='http://localhost:8888/printedunion/wp-content/uploads/2015/05/John-Doe_avatar_1391638216.jpg'>
+                  </div>
+                  <p class='author'>John Doe</p>
+                  <p class='company'>Company Name</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class='container'>
+        <div class='col-md-4'>
+          <a class='blurb' href='' style='background-color: #e74c3c; background-image: url("assets/img/1.png");'>
+            <h3>Graphic Design</h3>
+            <p>Meet our designers</p>
+          </a>
+        </div>
+        <div class='col-md-4'>
+          <a class='blurb' href='' style='background-color: #2ecc71; background-image: url("assets/img/2.png");'>
+            <h3>Printing</h3>
+            <p>See the process</p>
+          </a>
+        </div>
+        <div class='col-md-4'>
+          <a class='blurb' href='' style='background-color: #48a2df; background-image: url("assets/img/3.png");'>
+            <h3>Mailing</h3>
+            <p>Explore</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class='footer'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <p class='copyright pull-left'>
+              Copyright &copy; 2015 PrintedUnion. All Rights Reserved.
+            </p>
+            <ul class='footer-nav footer-social pull-right'>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-facebook'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-twitter'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-linkedin'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-rss'></i>
+                </a>
+              </li>
+            </ul>
+            <ul class='footer-nav pull-right'>
+              <li class='active'>
+                <a href='#'>Home</a>
+              </li>
+              <li>
+                <a href='#'>About</a>
+              </li>
+              <li>
+                <a href='#'>Services</a>
+              </li>
+              <li>
+                <a href='#'>Store</a>
+              </li>
+              <li>
+                <a href='#'>Blog</a>
+              </li>
+              <li>
+                <a href='#'>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src='assets/js/jquery-1.11.3.min.js'></script>
     <script src='assets/js/modernizr.js'></script>
     <script src='assets/js/bootstrap.min.js'></script>
