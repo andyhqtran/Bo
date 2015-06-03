@@ -1,0 +1,94 @@
+%html.no-js{:lang => 'en'}
+	%head
+		%meta{:charset => 'utf-8'}
+		%meta{:'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge'}
+		%title PrintedUnion | Political Printing
+		%meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1'}
+		/ Fonts
+		%link{:type => 'text/css', :media => 'screen', :rel => 'stylesheet', :href => 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900'}
+		%link{:type => 'text/css', :media => 'screen', :rel => 'stylesheet', :href => 'http://fonts.googleapis.com/css?family=Montserrat:400,700'}
+		%link{:type => 'text/css', :media => 'screen', :rel => 'stylesheet', :href => 'assets/css/font-awesome.min.css'}
+		/ Stylesheets
+		%link{:type => 'text/css', :media => 'screen', :rel => 'stylesheet', :href => 'assets/css/bootstrap.min.css'}
+		%link{:type => 'text/css', :media => 'screen', :rel => 'stylesheet', :href => 'assets/css/style.css'}
+	%body.woocommerce
+		%nav.navbar.navbar-fixed-top
+			.container
+				.row
+					.col-md-12
+						.navbar-header
+							%button.navbar-toggle.collapsed{:type => 'button', :'data-toggle' => 'collapse', :'data-target' => '#navbar-collapse'}
+								- 3.times do
+									%span.icon-bar
+							%a.navbar-brand{:href => '#'}
+								%img{:src => 'assets/img/logo.png'}
+						.navbar-collapse.collapse#navbar-collapse
+							.navbar-form.navbar-right{:role => 'search'}
+								%a.navbar-form-toggle{:href => '#'}
+								%form
+									.form-group
+										%input.form-control{:type => 'text', :placeholder => 'Type here and hit enter...'}
+										%button.btn.btn-default{:type => 'submit'}
+											%i.fa.fa-search
+							%ul.nav.navbar-nav.navbar-social.navbar-right
+								%li
+									%a{:href => '#'}
+										%i.fa.fa-facebook
+								%li
+									%a{:href => '#'}
+										%i.fa.fa-twitter
+								%li
+									%a{:href => '#'}
+										%i.fa.fa-linkedin
+								%li
+									%a{:href => '#'}
+										%i.fa.fa-rss
+							%ul.nav.navbar-nav.navbar-left
+								%li
+									%a{:href => 'index.html'} Home
+								%li.dropdown
+									%a.dropdown-toggle{:href => '#', :'data-toggle' => 'dropdown', :role => 'button', :'aria-expanded' => 'false'} About
+									%ul.dropdown-menu{:role => 'menu'}
+										%li
+											%a{:href => 'about.html'} Our Company
+										%li
+											%a{:href => 'services.html'} Services
+								%li.active
+									%a{:href => 'store.html'} Store
+								%li
+									%a{:href => 'blog.html'} Blog
+								%li
+									%a{:href => 'contact.html'} Contact
+		%section.page-header
+			.container
+				.row
+					.col-md-7
+						%h1 Shop
+						%p Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+		%section#main
+			.container
+				.row
+					.col-md-12
+						%h1.page-title Shop
+						%p.woocommerce-result-count
+							Showing 1-12 of 24 results
+						%ul.products
+							- 13.times do
+								%li.product
+									%a{:href => '#'}
+										%span.onsale Sale!
+										%img{:src => 'http://placehold.it/300x300'}
+										%h3 Product Title
+										%span.price
+											%del
+												%span.amount $15
+											%ins
+												%span.amount $12
+									%a.btn-choose.tpl{:href => '#'} Templates
+									%a.btn-choose.custom{:href => '#'} Upload
+									%a.btn-choose.choose{:href => '#'} Design
+		%script{:src => 'assets/js/jquery-1.11.3.min.js'}
+		%script{:src => 'assets/js/modernizr.js'}
+		%script{:src => 'assets/js/bootstrap.min.js'}
+		%script{:src => 'assets/js/scrollReveal.js'}
+		%script{:src => 'assets/js/script.js'}

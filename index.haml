@@ -45,18 +45,20 @@
 										%i.fa.fa-rss
 							%ul.nav.navbar-nav.navbar-left
 								%li.active
-									%a{:href => '#'} Home
+									%a{:href => 'index.html'} Home
 								%li.dropdown
 									%a.dropdown-toggle{:href => '#', :'data-toggle' => 'dropdown', :role => 'button', :'aria-expanded' => 'false'} About
 									%ul.dropdown-menu{:role => 'menu'}
 										%li
-											%a{:href => '#'} Services
+											%a{:href => 'about.html'} Our Company
+										%li
+											%a{:href => 'services.html'} Services
 								%li
-									%a{:href => '#'} Store
+									%a{:href => 'store.html'} Store
 								%li
-									%a{:href => '#'} Blog
+									%a{:href => 'blog.html'} Blog
 								%li
-									%a{:href => '#'} Contact
+									%a{:href => 'contact.html'} Contact
 		.carousel.slide#hero{:'data-ride' => 'carousel'}
 			%ol.carousel-indicators
 				%li.active{:'data-target' => '#hero', :'data-slide-to' => '0'}
@@ -118,15 +120,21 @@
 				.col-md-4
 					%a.blurb{:href => '', :style => 'background-color: #e74c3c; background-image: url("assets/img/1.png");'}
 						%h3 Graphic Design
-						%p Meet our designers
+						%p
+							%i.fa.fa-angle-right
+							Meet our designers
 				.col-md-4
 					%a.blurb{:href => '', :style => 'background-color: #2ecc71; background-image: url("assets/img/2.png");'}
 						%h3 Printing
-						%p See the process
+						%p
+							%i.fa.fa-angle-right
+							See the process
 				.col-md-4
 					%a.blurb{:href => '', :style => 'background-color: #48a2df; background-image: url("assets/img/3.png");'}
 						%h3 Mailing
-						%p Explore
+						%p
+							%i.fa.fa-angle-right
+							Explore
 		%footer.footer
 			.container
 				.row
